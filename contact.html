@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .contact-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+.hero{
+  text-align: left;
+  height: 90vh;
+} 
+h1{
+  text-align: center;
+}
+h3{
+      font-size: 50px;
+    }
+    button{
+      margin-left: 40%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+        <div class="navbar">
+            <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <div class="login">
+                <a href="manager\login.php" class="btn">Manager</a>
+                <a href="contributor\login.php" class="btn">Contributor</a>
+              </div>
+          </ul>
+        </div>
+      </nav>
+  </header>
+
+  <section class="hero">
+    <div class="container"><br><br>
+      <h3>Feel free to reach us!</h3><br><br><br>
+      <form action="https://formsubmit.co/sanskariscout@gmail.com" method="POST" class="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        
+        <button type="submit">Send</button>
+    </form>    
+  </section>
+
+  <footer>
+    <div class="ft-containter">
+      <p>&copy; 2024 Your Company. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
