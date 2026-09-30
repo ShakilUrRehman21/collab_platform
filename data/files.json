@@ -1,0 +1,12 @@
+[
+  {
+    "name": "main.js",
+    "language": "javascript",
+    "content": "// main.js\n// Created in SyncWorld Workspace\n\nconsole.log(\"Hello from main.js!\");\n"
+  },
+  {
+    "name": "Main.java",
+    "language": "java",
+    "content": ""
+  }
+]

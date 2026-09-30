@@ -3,41 +3,289 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home</title>
+  <title>SyncWorld | Real-Time Collaborative Workspace</title>
+  <meta name="description" content="High-performance real-time collaborative workspace with synchronized whiteboard, multi-file codeboard, and live peer presence.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <nav>
-        <div class="navbar">
-            <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-            <div class="login">
-                <a href="manager\login.php" class="btn">Manager</a>
-                <a href="contributor\login.php" class="btn">Contributor</a>
-              </div>
-          </ul>
+  <!-- Streamlined Top Navigation -->
+  <header class="top-nav">
+    <div class="brand-section">
+      <div class="brand-logo" title="SyncWorld Collaborative Workspace">
+        <!-- Modern Synchronized Dual-Orbital Mark -->
+        <div class="brand-logo-mark">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/>
+          </svg>
         </div>
-      </nav>
-  </header>
-    <div class="video-container">
-      <video id="background-video" muted loop autoplay>
-        <source src="vid.mp4" type="video/mp4">
-      </video>
-      <div class="content">
-        <h1>Welcome </h1>
-      <h2>to our platform.</h2>
+        <div class="brand-text-group">
+          <span class="brand-name">SyncWorld</span>
+          <span class="brand-badge">Workspace</span>
+        </div>
       </div>
     </div>
-  </body>
 
-  <footer>
-    <div class="ft-containter">
-      <p>&copy; 2024 Shakil. All rights reserved.</p>
+    <!-- Segmented Navigation Tabs -->
+    <nav class="nav-navigation" aria-label="Main Navigation">
+      <button class="nav-tab-btn active" data-view="whiteboard" id="nav-btn-whiteboard">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 12h8"/><path d="M12 8v8"/></svg>
+        <span>Whiteboard</span>
+      </button>
+
+      <button class="nav-tab-btn" data-view="codeboard" id="nav-btn-codeboard">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+        <span>Codeboard</span>
+      </button>
+
+      <button class="nav-tab-btn" data-view="activity" id="nav-btn-activity">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        <span>Activity Feed</span>
+      </button>
+    </nav>
+
+    <!-- Header Actions: Live Sync Status & User Profile -->
+    <div class="header-actions">
+      <!-- Live Sync Status Badge -->
+      <div class="live-sync-badge" title="Real-Time WebSocket Sync Status">
+        <span class="live-sync-pulse"></span>
+        <span id="peer-count-text">Connecting...</span>
+      </div>
+
+      <!-- Active User Profile Button -->
+      <button class="user-identity-btn" id="user-identity-btn" title="Click to Switch User Profile">
+        <div class="user-avatar-circle" id="user-nav-avatar">MV</div>
+        <div class="user-identity-text">
+          <span class="user-identity-name" id="user-nav-name">Marcus Vance</span>
+          <span class="user-identity-role" id="user-nav-role">Staff Engineer</span>
+        </div>
+      </button>
     </div>
-  </footer>
+  </header>
 
+  <!-- Main Viewport -->
+  <main class="main-viewport">
+
+    <!-- ==========================================
+         VIEW 1: COLLABORATIVE WHITEBOARD
+         ========================================== -->
+    <section class="view-panel active" id="view-whiteboard">
+      <div class="whiteboard-container">
+        <!-- Whiteboard Top Toolbar -->
+        <div class="whiteboard-toolbar">
+          <div class="toolbar-group">
+            <button class="wb-tool-btn active" data-tool="pen" title="Pen Brush">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"/></svg>
+            </button>
+            <button class="wb-tool-btn" data-tool="line" title="Straight Line">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="19" x2="19" y2="5"/></svg>
+            </button>
+            <button class="wb-tool-btn" data-tool="rect" title="Rectangle">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/></svg>
+            </button>
+            <button class="wb-tool-btn" data-tool="circle" title="Circle">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/></svg>
+            </button>
+            <button class="wb-tool-btn" data-tool="eraser" title="Eraser">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m7 21-4.3-4.3c-1-1-1-2.5 0-3.4l9.6-9.6c1-1 2.5-1 3.4 0l5.6 5.6c1 1 1 2.5 0 3.4L13 21"/><path d="M22 21H7"/><path d="m5 11 9 9"/></svg>
+            </button>
+          </div>
+
+          <div class="toolbar-group">
+            <div class="color-dot-picker">
+              <div class="color-dot active" style="background:#4f46e5;" data-color="#4f46e5" title="Electric Indigo"></div>
+              <div class="color-dot" style="background:#0f172a;" data-color="#0f172a" title="Dark Slate"></div>
+              <div class="color-dot" style="background:#0284c7;" data-color="#0284c7" title="Cyan"></div>
+              <div class="color-dot" style="background:#059669;" data-color="#059669" title="Emerald"></div>
+              <div class="color-dot" style="background:#e11d48;" data-color="#e11d48" title="Coral Rose"></div>
+              <div class="color-dot" style="background:#d97706;" data-color="#d97706" title="Amber"></div>
+            </div>
+
+            <select id="wb-stroke-size" class="stroke-width-select" title="Brush Size">
+              <option value="2">2px (Fine)</option>
+              <option value="4" selected>4px (Standard)</option>
+              <option value="8">8px (Thick)</option>
+            </select>
+          </div>
+
+          <div class="toolbar-group">
+            <span id="wb-peer-indicator" style="font-size:12px; font-weight:600; color:var(--status-success); margin-right:6px;">
+              WebSocket Live
+            </span>
+            <button class="btn-secondary" id="btn-undo-canvas">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"/></svg>
+              <span>Undo</span>
+            </button>
+            <button class="btn-secondary" id="btn-clear-canvas" style="color:var(--status-danger);">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
+              <span>Clear</span>
+            </button>
+            <button class="btn-secondary" id="btn-export-canvas">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              <span>Export</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- High-DPI Interactive Canvas & Remote Cursor Overlay -->
+        <div class="canvas-wrapper" id="canvas-wrapper">
+          <canvas id="whiteboard-canvas"></canvas>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         VIEW 2: CODEBOARD IDE (CUSTOM FILES)
+         ========================================== -->
+    <section class="view-panel" id="view-codeboard">
+      <div class="codeboard-container">
+        <!-- Top Toolbar -->
+        <div class="codeboard-toolbar">
+          <div style="display:flex; align-items:center; gap:8px;">
+            <span id="codeboard-active-filename" style="font-size:12px; font-weight:600; color:var(--text-primary); font-family:var(--font-mono);">sync-engine.ts</span>
+            <span style="font-size:11px; color:var(--text-tertiary);">&bull; Real-time Multi-Tab Synced</span>
+          </div>
+
+          <div style="display:flex; align-items:center; gap:8px;">
+            <button class="btn-secondary" id="btn-save-code">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/></svg>
+              <span>Save File</span>
+            </button>
+            <button class="btn-primary" id="btn-run-code">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+              <span>Run Sandbox</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Body with Custom File Explorer -->
+        <div class="codeboard-body">
+          <aside class="file-explorer-pane">
+            <div class="file-explorer-header">
+              <span>Workspace Files</span>
+              <button class="btn-secondary" id="btn-create-file" style="padding:2px 6px; font-size:11px;" title="Create New Workspace File">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                <span>New</span>
+              </button>
+            </div>
+            <ul class="file-tree-list" id="codeboard-file-list">
+              <!-- Rendered via codeboard.js -->
+            </ul>
+          </aside>
+
+          <!-- Textarea Editor & Console -->
+          <div class="editor-main-pane">
+            <textarea class="code-textarea" id="code-editor-textarea" spellcheck="false"></textarea>
+            <div class="console-pane">
+              <div class="console-header">
+                <span id="console-header-title">Runtime Execution Sandbox Console</span>
+                <span id="console-status-pill" style="font-size:10px; font-weight:700; padding:2px 8px; border-radius:4px; background:#334155; color:#94a3b8; letter-spacing:0.5px;">STANDBY</span>
+              </div>
+              <div class="console-body" id="console-output-body">
+                <div style="color:#64748b;">Ready. Edits on this code editor synchronize across all open browser tabs in real time.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         VIEW 3: ACTIVITY AUDIT FEED ("WHO DID WHAT")
+         ========================================== -->
+    <section class="view-panel" id="view-activity">
+      <div class="activity-container">
+        <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:16px;">
+          <div>
+            <h2 style="font-size:17px; font-weight:700;">Workspace Activity Audit Trail</h2>
+            <p style="font-size:12px; color:var(--text-secondary);">Real-time log of team mutations, file creations, and workspace state changes.</p>
+          </div>
+          <span class="live-sync-badge">Live Broadcast Active</span>
+        </div>
+
+        <div id="activity-feed-list">
+          <!-- Rendered dynamically via activity.js -->
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================
+       MODAL: USER IDENTITY PROFILE SWITCHER
+       ========================================== -->
+  <div class="modal-backdrop" id="user-profile-modal">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h2 style="font-size:15px; font-weight:700;">Active User Profile</h2>
+        <button class="modal-close-btn" style="color:var(--text-tertiary);">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+      <form id="user-profile-form">
+        <div class="modal-body">
+          <div class="form-group">
+            <label class="form-label" for="user-profile-name">Full Name</label>
+            <input type="text" id="user-profile-name" class="form-input" placeholder="e.g. Marcus Vance" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="user-profile-role">Engineering Role</label>
+            <select id="user-profile-role" class="form-select">
+              <option value="Staff Engineer">Staff Engineer</option>
+              <option value="Senior Contributor">Senior Contributor</option>
+              <option value="Platform Architect">Platform Architect</option>
+              <option value="Design Systems Lead">Design Systems Lead</option>
+              <option value="Security Engineer">Security Engineer</option>
+            </select>
+          </div>
+
+          <div style="background:var(--bg-subtle); padding:10px 12px; border-radius:var(--radius-sm); border:1px solid var(--border-subtle); font-size:12px; color:var(--text-secondary);">
+            Actions you perform in the workspace (creating files, code changes, whiteboard drawing) will be permanently credited to this identity in the live audit trail.
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-secondary modal-close-btn">Cancel</button>
+          <button type="submit" class="btn-primary">Save Profile</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       MODAL: CREATE NEW WORKSPACE FILE
+       ========================================== -->
+  <div class="modal-backdrop" id="new-file-modal">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h2 style="font-size:15px; font-weight:700;">Create Workspace File</h2>
+        <button class="modal-close-btn" style="color:var(--text-tertiary);">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+      <form id="new-file-form">
+        <div class="modal-body">
+          <div class="form-group">
+            <label class="form-label" for="new-file-name">File Name & Extension</label>
+            <input type="text" id="new-file-name" class="form-input" placeholder="e.g. calculator.py, index.js, styles.css" required>
+          </div>
+          <div style="font-size:12px; color:var(--text-tertiary);">
+            Supported file modes: Java (.java), Python (.py), TypeScript (.ts), JavaScript (.js), C++ (.cpp), JSON (.json), CSS (.css), HTML (.html).
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-secondary modal-close-btn">Cancel</button>
+          <button type="submit" class="btn-primary">Create File</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- Modular Application Engine -->
+  <script type="module" src="js/main.js"></script>
 </body>
 </html>

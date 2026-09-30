@@ -1,0 +1,23 @@
+{
+  "name": "syncworld",
+  "version": "1.0.0",
+  "description": "Real-Time Collaborative Workspace with Multi-Language Codeboard, Live Whiteboard, and Audit Activity Feed",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "keywords": [
+    "collaboration",
+    "real-time",
+    "websockets",
+    "whiteboard",
+    "codeboard",
+    "compiler-sandbox"
+  ],
+  "author": "SyncWorld Team",
+  "license": "MIT",
+  "dependencies": {
+    "ws": "^8.22.0"
+  }
+}

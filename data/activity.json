@@ -1,0 +1,410 @@
+[
+  {
+    "id": "act-1790787929757-ea1w",
+    "user": "Elena Rostova",
+    "role": "Senior Contributor",
+    "action": "USER_JOINED",
+    "details": "Elena Rostova joined the collaborative workspace",
+    "timestamp": "2026-09-30T17:05:29.757Z"
+  },
+  {
+    "id": "act-1790787911609-13iw",
+    "user": "Shakil",
+    "role": "Staff Engineer",
+    "action": "USER_JOINED",
+    "details": "Shakil joined the collaborative workspace",
+    "timestamp": "2026-09-30T17:05:11.609Z"
+  },
+  {
+    "id": "act-1790787903080-1npr",
+    "user": "Shakil",
+    "role": "Staff Engineer",
+    "action": "USER_JOINED",
+    "details": "Shakil joined the collaborative workspace",
+    "timestamp": "2026-09-30T17:05:03.080Z"
+  },
+  {
+    "id": "act-1790787853477-uu68",
+    "user": "Marcus Vance",
+    "role": "Staff Engineer",
+    "action": "CREATED_FILE",
+    "details": "Created workspace file \"Main.java\"",
+    "timestamp": "2026-09-30T17:04:13.477Z"
+  },
+  {
+    "id": "act-1790787519686-u3as",
+    "user": "Sarah Lin",
+    "role": "Design Systems Lead",
+    "action": "USER_JOINED",
+    "details": "Sarah Lin joined the collaborative workspace",
+    "timestamp": "2026-09-30T16:58:39.687Z"
+  },
+  {
+    "id": "act-1790787480844-z9gi",
+    "user": "Shakil",
+    "role": "Staff Engineer",
+    "action": "DELETED_FILE",
+    "details": "Deleted workspace file \"Main.java\"",
+    "timestamp": "2026-09-30T16:58:00.845Z"
+  },
+  {
+    "id": "act-1790787461479-pnw5",
+    "user": "Shakil",
+    "role": "Staff Engineer",
+    "action": "USER_JOINED",
+    "details": "Shakil joined the collaborative workspace",
+    "timestamp": "2026-09-30T16:57:41.479Z"
+  },
+  {
+    "id": "act-1790787432751-aqjt",
+    "user": "Shakil",
+    "role": "Staff Engineer",
+    "action": "USER_JOINED",
+    "details": "Shakil joined the collaborative workspace",
+    "timestamp": "2026-09-30T16:57:12.751Z"
+  },
+  {
+    "id": "act-1790787407962-tl5g",
+    "user": "Shakil",
+    "role": "Staff Engineer",
+    "action": "CLEARED_WHITEBOARD",
+    "details": "Shakil cleared the whiteboard",
+    "timestamp": "2026-09-30T16:56:47.962Z"
+  },
+  {
+    "id": "act-1790787382714-2col",
+    "user": "Shakil",
+    "role": "Staff Engineer",
+    "action": "USER_JOINED",
+    "details": "Shakil joined the collaborative workspace",
+    "timestamp": "2026-09-30T16:56:22.714Z"
+  },
+  {
+    "id": "act-1790787382513-k44s",
+    "user": "Shakil",
+    "role": "Staff Engineer",
+    "action": "USER_JOINED",
+    "details": "Shakil joined the collaborative workspace",
+    "timestamp": "2026-09-30T16:56:22.513Z"
+  },
+  {
+    "id": "act-1790787382276-pk5g",
+    "user": "Shakil",
+    "role": "Staff Engineer",
+    "action": "USER_JOINED",
+    "details": "Shakil joined the collaborative workspace",
+    "timestamp": "2026-09-30T16:56:22.276Z"
+  },
+  {
+    "id": "act-1790787382075-dnnv",
+    "user": "Shakil",
+    "role": "Staff Engineer",
+    "action": "USER_JOINED",
+    "details": "Shakil joined the collaborative workspace",
+    "timestamp": "2026-09-30T16:56:22.075Z"
+  },
+  {
+    "id": "act-1790787367824-xd9l",
+    "user": "Shakil",
+    "role": "Staff Engineer",
+    "action": "USER_JOINED",
+    "details": "Shakil joined the collaborative workspace",
+    "timestamp": "2026-09-30T16:56:07.824Z"
+  },
+  {
+    "id": "act-1790787296561-056e",
+    "user": "Shakil",
+    "role": "Staff Engineer",
+    "action": "USER_JOINED",
+    "details": "Shakil joined the collaborative workspace",
+    "timestamp": "2026-09-30T16:54:56.561Z"
+  },
+  {
+    "id": "act-1790787165027-h63p",
+    "user": "Shakil",
+    "role": "Staff Engineer",
+    "action": "USER_JOINED",
+    "details": "Shakil joined the collaborative workspace",
+    "timestamp": "2026-09-30T16:52:45.027Z"
+  },
+  {
+    "id": "act-1790787102144-mp0q",
+    "user": "Shakil",
+    "role": "Staff Engineer",
+    "action": "CREATED_FILE",
+    "details": "Created workspace file \"Main.java\"",
+    "timestamp": "2026-09-30T16:51:42.144Z"
+  },
+  {
+    "id": "act-1790787092404-5fe2",
+    "user": "Shakil",
+    "role": "Staff Engineer",
+    "action": "DELETED_FILE",
+    "details": "Deleted workspace file \"demo.py\"",
+    "timestamp": "2026-09-30T16:51:32.404Z"
+  },
+  {
+    "id": "act-1790787085759-yx1v",
+    "user": "Shakil",
+    "role": "Staff Engineer",
+    "action": "CLEARED_WHITEBOARD",
+    "details": "Shakil cleared the whiteboard",
+    "timestamp": "2026-09-30T16:51:25.759Z"
+  },
+  {
+    "id": "act-1790787083278-96wa",
+    "user": "Shakil",
+    "role": "Staff Engineer",
+    "action": "USER_JOINED",
+    "details": "Shakil joined the collaborative workspace",
+    "timestamp": "2026-09-30T16:51:23.278Z"
+  },
+  {
+    "id": "act-1790787083116-ley9",
+    "user": "Shakil",
+    "role": "Staff Engineer",
+    "action": "USER_JOINED",
+    "details": "Shakil joined the collaborative workspace",
+    "timestamp": "2026-09-30T16:51:23.116Z"
+  },
+  {
+    "id": "act-1790787082955-e1ez",
+    "user": "Shakil",
+    "role": "Staff Engineer",
+    "action": "USER_JOINED",
+    "details": "Shakil joined the collaborative workspace",
+    "timestamp": "2026-09-30T16:51:22.955Z"
+  },
+  {
+    "id": "act-1790787082780-39au",
+    "user": "Shakil",
+    "role": "Staff Engineer",
+    "action": "USER_JOINED",
+    "details": "Shakil joined the collaborative workspace",
+    "timestamp": "2026-09-30T16:51:22.780Z"
+  },
+  {
+    "id": "act-1790787082322-8orn",
+    "user": "Shakil",
+    "role": "Staff Engineer",
+    "action": "USER_JOINED",
+    "details": "Shakil joined the collaborative workspace",
+    "timestamp": "2026-09-30T16:51:22.322Z"
+  },
+  {
+    "id": "act-1790787056640-y0tx",
+    "user": "Shakil",
+    "role": "Staff Engineer",
+    "action": "USER_JOINED",
+    "details": "Shakil joined the collaborative workspace",
+    "timestamp": "2026-09-30T16:50:56.640Z"
+  },
+  {
+    "id": "act-1790787055225-oxo9",
+    "user": "Shakil",
+    "role": "Staff Engineer",
+    "action": "USER_JOINED",
+    "details": "Shakil joined the collaborative workspace",
+    "timestamp": "2026-09-30T16:50:55.225Z"
+  },
+  {
+    "id": "act-1790787042313-1w23",
+    "user": "Shakil",
+    "role": "Staff Engineer",
+    "action": "USER_JOINED",
+    "details": "Shakil joined the collaborative workspace",
+    "timestamp": "2026-09-30T16:50:42.313Z"
+  },
+  {
+    "id": "act-1790787011928-wxcv",
+    "user": "Shakil",
+    "role": "Staff Engineer",
+    "action": "CREATED_FILE",
+    "details": "Created workspace file \"demo.py\"",
+    "timestamp": "2026-09-30T16:50:11.928Z"
+  },
+  {
+    "id": "act-1790786994208-o34q",
+    "user": "Shakil",
+    "role": "Staff Engineer",
+    "action": "USER_JOINED",
+    "details": "Shakil joined the collaborative workspace",
+    "timestamp": "2026-09-30T16:49:54.208Z"
+  },
+  {
+    "id": "act-1790786954695-mu4p",
+    "user": "Shakil",
+    "role": "Staff Engineer",
+    "action": "USER_JOINED",
+    "details": "Shakil joined the collaborative workspace",
+    "timestamp": "2026-09-30T16:49:14.695Z"
+  },
+  {
+    "id": "act-1790786953965-5qv6",
+    "user": "Shakil",
+    "role": "Staff Engineer",
+    "action": "USER_JOINED",
+    "details": "Shakil joined the collaborative workspace",
+    "timestamp": "2026-09-30T16:49:13.965Z"
+  },
+  {
+    "id": "act-1790786896562-zawj",
+    "user": "Shakil",
+    "role": "Staff Engineer",
+    "action": "USER_JOINED",
+    "details": "Shakil joined the collaborative workspace",
+    "timestamp": "2026-09-30T16:48:16.562Z"
+  },
+  {
+    "id": "act-1790786823813-svb6",
+    "user": "Elena Rostova",
+    "role": "Senior Contributor",
+    "action": "USER_JOINED",
+    "details": "Elena Rostova joined the collaborative workspace",
+    "timestamp": "2026-09-30T16:47:03.813Z"
+  },
+  {
+    "id": "act-1790786814507-lh1v",
+    "user": "Shakil",
+    "role": "Staff Engineer",
+    "action": "USER_JOINED",
+    "details": "Shakil joined the collaborative workspace",
+    "timestamp": "2026-09-30T16:46:54.507Z"
+  },
+  {
+    "id": "act-1790786809191-11rh",
+    "user": "Shakil",
+    "role": "Staff Engineer",
+    "action": "USER_JOINED",
+    "details": "Shakil joined the collaborative workspace",
+    "timestamp": "2026-09-30T16:46:49.191Z"
+  },
+  {
+    "id": "act-1790786772081-0cer",
+    "user": "Shakil",
+    "role": "Staff Engineer",
+    "action": "USER_JOINED",
+    "details": "Shakil joined the collaborative workspace",
+    "timestamp": "2026-09-30T16:46:12.081Z"
+  },
+  {
+    "id": "act-1790786628413-ebar",
+    "user": "Shakil",
+    "role": "Staff Engineer",
+    "action": "USER_JOINED",
+    "details": "Shakil joined the collaborative workspace",
+    "timestamp": "2026-09-30T16:43:48.413Z"
+  },
+  {
+    "id": "act-1790786536273-hp86",
+    "user": "Shakil",
+    "role": "Staff Engineer",
+    "action": "USER_JOINED",
+    "details": "Shakil joined the collaborative workspace",
+    "timestamp": "2026-09-30T16:42:16.273Z"
+  },
+  {
+    "id": "act-1790786344293-ci8f",
+    "user": "Sarah Lin",
+    "role": "Design Systems Lead",
+    "action": "USER_JOINED",
+    "details": "Sarah Lin joined the collaborative workspace",
+    "timestamp": "2026-09-30T16:39:04.293Z"
+  },
+  {
+    "id": "act-1790786344119-y4oa",
+    "user": "Elena Rostova",
+    "role": "Senior Contributor",
+    "action": "CREATED_FILE",
+    "details": "Created workspace file \"main.js\"",
+    "timestamp": "2026-09-30T16:39:04.119Z"
+  },
+  {
+    "id": "act-1790786317614-xfjy",
+    "user": "Shakil",
+    "role": "Staff Engineer",
+    "action": "USER_JOINED",
+    "details": "Shakil joined the collaborative workspace",
+    "timestamp": "2026-09-30T16:38:37.614Z"
+  },
+  {
+    "id": "act-1790786314614-yj2k",
+    "user": "Shakil",
+    "role": "Staff Engineer",
+    "action": "DELETED_FILE",
+    "details": "Deleted workspace file \"calculator.py\"",
+    "timestamp": "2026-09-30T16:38:34.614Z"
+  },
+  {
+    "id": "act-1790786310899-spwv",
+    "user": "Shakil",
+    "role": "Staff Engineer",
+    "action": "DELETED_FILE",
+    "details": "Deleted workspace file \"pipeline-worker.js\"",
+    "timestamp": "2026-09-30T16:38:30.900Z"
+  },
+  {
+    "id": "act-1790786307709-4u0s",
+    "user": "Shakil",
+    "role": "Staff Engineer",
+    "action": "DELETED_FILE",
+    "details": "Deleted workspace file \"sync-engine.ts\"",
+    "timestamp": "2026-09-30T16:38:27.709Z"
+  },
+  {
+    "id": "act-1790786294168-9j7e",
+    "user": "Shakil",
+    "role": "Staff Engineer",
+    "action": "USER_JOINED",
+    "details": "Shakil joined the collaborative workspace",
+    "timestamp": "2026-09-30T16:38:14.168Z"
+  },
+  {
+    "id": "act-1790786279828-ypga",
+    "user": "Elena Rostova",
+    "role": "Senior Contributor",
+    "action": "USER_JOINED",
+    "details": "Elena Rostova joined the collaborative workspace",
+    "timestamp": "2026-09-30T16:37:59.829Z"
+  },
+  {
+    "id": "act-1790786279230-31ki",
+    "user": "Shakil",
+    "role": "Staff Engineer",
+    "action": "USER_JOINED",
+    "details": "Shakil joined the collaborative workspace",
+    "timestamp": "2026-09-30T16:37:59.230Z"
+  },
+  {
+    "id": "act-1790786265021-qbzz",
+    "user": "Alex Rivera",
+    "role": "Platform Architect",
+    "action": "USER_JOINED",
+    "details": "Alex Rivera joined the collaborative workspace",
+    "timestamp": "2026-09-30T16:37:45.021Z"
+  },
+  {
+    "id": "act-1790786235383-8z2g",
+    "user": "Marcus Vance",
+    "role": "Staff Engineer",
+    "action": "PUBLISHED_EXTENSION",
+    "details": "Published extension \"@vance/distributed-cache\" (Distributed InMemory Delta Cache) to Marketplace",
+    "timestamp": "2026-09-30T16:37:15.383Z"
+  },
+  {
+    "id": "act-1790786218071-0151",
+    "user": "Elena Rostova",
+    "role": "Senior Contributor",
+    "action": "CREATED_FILE",
+    "details": "Created workspace file \"calculator.py\"",
+    "timestamp": "2026-09-30T16:36:58.072Z"
+  },
+  {
+    "id": "act-1",
+    "user": "Marcus Vance",
+    "role": "Staff Engineer",
+    "action": "SYSTEM_INITIALIZED",
+    "details": "Initialized SyncWorld cluster and verified WebSocket mesh",
+    "timestamp": "2026-09-30T16:34:29.682Z"
+  }
+]

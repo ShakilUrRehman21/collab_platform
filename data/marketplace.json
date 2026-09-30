@@ -1,0 +1,143 @@
+[
+  {
+    "id": "pkg-1790786235383",
+    "name": "@vance/distributed-cache",
+    "title": "Distributed InMemory Delta Cache",
+    "category": "collaboration",
+    "version": "1.0.0",
+    "author": "Marcus Vance",
+    "description": "Ultra-low latency in-memory sync cache for WebSockets.",
+    "price": 19,
+    "priceLabel": "$19",
+    "downloads": "1",
+    "rating": 5,
+    "tags": [
+      "Community",
+      "Extension"
+    ],
+    "installed": true,
+    "publishedAt": "2026-09-30T16:37:15.383Z"
+  },
+  {
+    "id": "pkg-crdt-canvas",
+    "name": "@syncworld/crdt-canvas",
+    "title": "Real-Time CRDT Blackboard Engine",
+    "category": "collaboration",
+    "version": "2.4.1",
+    "author": "SyncWorld Labs",
+    "description": "Zero-latency delta replication engine for multi-tenant collaborative whiteboards and canvas sync.",
+    "price": 0,
+    "priceLabel": "Free",
+    "downloads": "18.4k",
+    "rating": 4.94,
+    "tags": [
+      "CRDT",
+      "WebSockets",
+      "Canvas",
+      "TypeScript"
+    ],
+    "installed": true,
+    "publishedAt": "2026-09-28T10:00:00Z"
+  },
+  {
+    "id": "pkg-monaco-collab",
+    "name": "@syncworld/monaco-collab",
+    "title": "Distributed Multi-Cursor Sync Protocol",
+    "category": "collaboration",
+    "version": "3.1.0",
+    "author": "Vance Systems",
+    "description": "Seamless multi-caret presence, remote selection indicators, and optimistic diff reconciliation.",
+    "price": 49,
+    "priceLabel": "$49 / org",
+    "downloads": "12.8k",
+    "rating": 4.91,
+    "tags": [
+      "Monaco",
+      "Multi-Cursor",
+      "Presence"
+    ],
+    "installed": false,
+    "publishedAt": "2026-09-29T14:30:00Z"
+  },
+  {
+    "id": "pkg-kanban-streamer",
+    "name": "@syncworld/kanban-streamer",
+    "title": "High-Velocity Sprint Task Streamer",
+    "category": "workflow",
+    "version": "1.8.4",
+    "author": "SyncWorld Core",
+    "description": "Reactive Kanban state engine with WebSocket delta streams and Linear-compatible webhooks.",
+    "price": 0,
+    "priceLabel": "Free",
+    "downloads": "24.1k",
+    "rating": 4.96,
+    "tags": [
+      "Kanban",
+      "Sprint",
+      "Workflow"
+    ],
+    "installed": true,
+    "publishedAt": "2026-09-27T08:15:00Z"
+  },
+  {
+    "id": "pkg-auth-rbac",
+    "name": "@syncworld/auth-rbac",
+    "title": "Enterprise SSO & Role-Based Access Gate",
+    "category": "security",
+    "version": "2.0.2",
+    "author": "CyberSphere",
+    "description": "SAML 2.0, OpenID Connect, and fine-grained resource permission matrix with audit logging.",
+    "price": 129,
+    "priceLabel": "$129 / perpetual",
+    "downloads": "6.2k",
+    "rating": 4.88,
+    "tags": [
+      "SAML",
+      "SSO",
+      "RBAC",
+      "Security"
+    ],
+    "installed": false,
+    "publishedAt": "2026-09-25T12:00:00Z"
+  },
+  {
+    "id": "pkg-canary-deployer",
+    "name": "@syncworld/canary-deployer",
+    "title": "Zero-Downtime Blue/Green Deploy Controller",
+    "category": "devops",
+    "version": "1.5.0",
+    "author": "CloudScale Eng",
+    "description": "Kubernetes and serverless canary rollout pipeline that tracks Prometheus latency metrics.",
+    "price": 89,
+    "priceLabel": "$89 / seat",
+    "downloads": "8.9k",
+    "rating": 4.85,
+    "tags": [
+      "DevOps",
+      "Canary",
+      "Kubernetes"
+    ],
+    "installed": false,
+    "publishedAt": "2026-09-26T16:45:00Z"
+  },
+  {
+    "id": "pkg-bright-tokens",
+    "name": "@syncworld/bright-tokens",
+    "title": "Accessible Radiant Light Design Tokens",
+    "category": "ui-kits",
+    "version": "1.2.0",
+    "author": "Design Systems Guild",
+    "description": "High-density bright design tokens. WCAG AAA compliance, clean micro-interactions, zero emojis.",
+    "price": 29,
+    "priceLabel": "$29",
+    "downloads": "14.2k",
+    "rating": 4.92,
+    "tags": [
+      "Design System",
+      "CSS",
+      "Accessible"
+    ],
+    "installed": true,
+    "publishedAt": "2026-09-24T09:20:00Z"
+  }
+]

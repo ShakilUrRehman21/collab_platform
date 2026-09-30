@@ -1,0 +1,34 @@
+[
+  {
+    "id": "SW-201",
+    "title": "Refactor CRDT state vector garbage collection",
+    "desc": "Prune tombstones after all client peers acknowledge vector clock snapshot.",
+    "column": "backlog",
+    "priority": "high",
+    "assignee": "Marcus Vance"
+  },
+  {
+    "id": "SW-202",
+    "title": "Implement WebRTC DataChannel signaling mesh",
+    "desc": "Establish direct P2P mesh for peer clients to reduce relay latency to <5ms.",
+    "column": "inprogress",
+    "priority": "critical",
+    "assignee": "Elena Rostova"
+  },
+  {
+    "id": "SW-203",
+    "title": "Construct Marketplace manifest validator",
+    "desc": "Verify semantic versioning and package integrity signatures on publication.",
+    "column": "review",
+    "priority": "medium",
+    "assignee": "Alex Rivera"
+  },
+  {
+    "id": "SW-204",
+    "title": "Integrate WCAG AAA bright tokens into UI kit",
+    "desc": "Standardize button focus rings and table border contrasts across all viewports.",
+    "column": "done",
+    "priority": "low",
+    "assignee": "Sarah Lin"
+  }
+]
